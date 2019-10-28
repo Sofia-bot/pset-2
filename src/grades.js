@@ -26,6 +26,7 @@ grade = Number(readlineSync.question("\nEnter three test grades.\n"));
 let testAvg = gradeCalc(grade);
 testAvg *= testWeight;
 
-const finalGrade = homeworkAvg + quizAvg + testAvg;
+let finalGrade = homeworkAvg + quizAvg + testAvg;
+finalGrade = finalGrade.toLocaleString ("en", {minimumFractionDigits: 2, maximumFractionDigits: 2});
 
 console.log ("\nYour marking period grade is " + finalGrade + "%");

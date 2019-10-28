@@ -17,4 +17,5 @@ const salaryMedicare = annualSalary * medicare;
 let paycheck = annualSalary - salaryFederal - salaryState - salarySocial - salaryMedicare;
 paycheck /= 24;
 paycheck = paycheck.toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+
 console.log("\nYour take-home pay each check will be $" + paycheck + ".");
